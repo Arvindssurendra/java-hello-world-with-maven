@@ -9,6 +9,7 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
+                sh 'echo "This is a Build stage"'
                 sh 'chmod +x install_java_maven.sh'
                 sh './install_java_maven.sh'
 
