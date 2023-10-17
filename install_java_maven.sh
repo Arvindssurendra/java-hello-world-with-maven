@@ -11,13 +11,13 @@ echo debconf shared/accepted-oracle-license-v1-2 select true | sudo debconf-set-
 echo debconf shared/accepted-oracle-license-v1-2 seen true | sudo debconf-set-selections
 
 # Install Oracle JDK 11
-sudo apt install -y oracle-java11-installer
+apt install -y oracle-java11-installer
 
 # Set the installed Java version as the default
-sudo apt install -y oracle-java11-set-default
+apt install -y oracle-java11-set-default
 
 # Install Apache Maven
-sudo apt install -y maven
+apt install -y maven
 
 # Display the installed versions
 java -version
